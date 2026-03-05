@@ -2,127 +2,127 @@ export default function Home() {
   return (
     <main>
       <div className="wrap" style={{ paddingTop: 14 }}>
-        <header className="card-soft" style={{ padding: 12, borderRadius: 64, display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10 }}>
+        <header className="card-soft" style={{ padding: 10, borderRadius: 999, display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10 }}>
           <span className="pill">Sakib Ahmed</span>
-          <nav style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            {[["About", "#about"], ["Services", "#services"], ["Work", "#work"], ["Process", "#process"], ["Reviews", "#reviews"]].map(([l, h]) => (
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            {[["About", "#about"], ["Work", "#work"], ["Reviews", "#reviews"], ["Contact", "#contact"]].map(([l, h]) => (
               <a key={String(l)} href={String(h)} className="pill" style={{ letterSpacing: 0, textTransform: "none" }}>{l}</a>
             ))}
-          </nav>
+          </div>
         </header>
       </div>
 
-      <section className="section">
-        <div className="wrap hero" style={{ display: "grid", gridTemplateColumns: "1.1fr .9fr", gap: 24 }}>
-          <article className="card-white" style={{ padding: 34 }}>
-            <span className="pill">SEO Expert & WordPress Developer</span>
-            <h1 className="h1" style={{ margin: "16px 0 12px" }}>Premium growth systems<br />for modern brands.</h1>
-            <p className="muted" style={{ fontSize: 18, maxWidth: 620 }}>
-              I build conversion-ready WordPress websites and SEO frameworks that increase qualified traffic and real revenue.
-            </p>
-            <div style={{ marginTop: 24, display: "flex", gap: 10, flexWrap: "wrap" }}>
-              <a className="btn btn-dark" href="mailto:hello@sakibahmed.com">Book Discovery Call</a>
-              <a className="btn btn-light" target="_blank" href="https://www.linkedin.com/in/ahmed-sakib-upp/">LinkedIn</a>
-            </div>
-          </article>
-          <article className="card-white" style={{ padding: 10 }}>
-            <img className="img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="hero" />
-          </article>
+      <section className="section" style={{ paddingBottom: 28 }}>
+        <div className="wrap" style={{ textAlign: "center" }}>
+          <span className="pill">SEO Expert • WordPress Developer</span>
+          <h1 className="h1" style={{ margin: "14px 0 10px" }}>Websites and SEO systems<br />for real business growth.</h1>
+          <p className="muted" style={{ maxWidth: 620, margin: "0 auto", fontSize: 16 }}>
+            Premium design, technical performance, and conversion-focused SEO—built into one execution workflow.
+          </p>
+          <div style={{ marginTop: 18, display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
+            <a className="btn btn-dark" href="mailto:hello@sakibahmed.com">Book a call</a>
+            <a className="btn btn-light" href="#work">View portfolio</a>
+          </div>
         </div>
       </section>
 
-      <section className="wrap" style={{ paddingBottom: 70 }}>
-        <div className="card-white" style={{ borderRadius: 64, padding: 24 }}>
-          <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 16 }}>
-            {[["120+","projects delivered"],["8+","years experience"],["95%","client retention"],["3x","avg lead growth"]].map(([n,t])=>(
-              <div key={String(n)} className="card-soft" style={{ padding: 16, borderRadius: 16 }}>
-                <div style={{ fontSize: 30, fontWeight: 700 }}>{n}</div><div className="muted" style={{ fontSize: 14 }}>{t}</div>
-              </div>
-            ))}
-          </div>
+      <section className="wrap" style={{ paddingBottom: 52 }}>
+        <article className="card-white" style={{ padding: 10 }}>
+          <img className="img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80" alt="hero visual" />
+        </article>
+      </section>
+
+      <section className="wrap" style={{ paddingBottom: 56 }}>
+        <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 12 }}>
+          {[["120+", "Projects done"], ["8+", "Years experience"], ["95%", "Client retention"], ["3x", "Avg lead growth"]].map(([n, t]) => (
+            <div key={String(n)} className="card-soft" style={{ padding: 14, borderRadius: 14 }}>
+              <div style={{ fontWeight: 700, fontSize: 24 }}>{n}</div>
+              <div className="muted" style={{ fontSize: 13 }}>{t}</div>
+            </div>
+          ))}
         </div>
       </section>
 
       <section id="about" className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap split" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
-          <article className="card-white" style={{ padding: 10 }}>
-            <img className="img" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80" alt="about" />
+        <div className="wrap split" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <article>
+            <h2 className="h2" style={{ marginTop: 0 }}>Who am I?</h2>
+            <p className="muted">I help brands scale with high-performance WordPress development and practical SEO systems.</p>
+            <div style={{ marginTop: 16 }}>
+              {["Technical SEO and index health", "Conversion-led page architecture", "Fast build and transparent reporting"].map((x) => (
+                <div key={x} className="card-soft" style={{ padding: "10px 12px", marginBottom: 8 }}>{x}</div>
+              ))}
+            </div>
           </article>
-          <article className="card-white" style={{ padding: 30 }}>
-            <span className="pill">About</span>
-            <h2 className="h2" style={{ margin: "14px 0" }}>Strategy and execution under one roof.</h2>
-            <p className="muted">I combine technical SEO, content architecture, and custom WordPress development into one integrated workflow, so growth is faster and cleaner.</p>
+          <article className="card-white" style={{ padding: 8 }}>
+            <img className="img" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="about visual" />
           </article>
-        </div>
-      </section>
-
-      <section id="services" className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap card-white" style={{ borderRadius: 64, padding: 24 }}>
-          <h2 className="h2" style={{ marginTop: 0 }}>My Services</h2>
-          <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))" }}>
-            {[
-              ["SEO Strategy", "Keyword architecture, intent mapping, and growth plans."],
-              ["WordPress Development", "Fast, scalable, conversion-optimized builds."],
-              ["Technical SEO", "Crawl, index, schema, and performance fixes."],
-              ["Local SEO", "UAE-focused visibility and lead capture systems."],
-            ].map(([t,d]) => (
-              <article key={String(t)} className="card-soft" style={{ padding: 18 }}><h3 style={{ margin: "0 0 8px" }}>{t}</h3><p className="muted" style={{ margin: 0 }}>{d}</p></article>
-            ))}
-          </div>
         </div>
       </section>
 
       <section id="work" className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap card-white" style={{ borderRadius: 64, padding: 24 }}>
-          <h2 className="h2" style={{ marginTop: 0 }}>Featured Work</h2>
-          <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))" }}>
+        <div className="wrap">
+          <h2 className="h2" style={{ marginTop: 0 }}>Selected Work</h2>
+          <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))" }}>
             {[
-              "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
-              "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1000&q=80",
-              "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=1000&q=80",
-              "https://images.unsplash.com/photo-1551281044-8b1f1f5f2f7e?auto=format&fit=crop&w=1000&q=80"
-            ].map((src, i) => (
-              <article key={src} className="card-soft" style={{ padding: 10 }}><img className="img" src={src} alt="work" /><div style={{ padding: "10px 4px 4px" }}><strong>Case Study {i+1}</strong><div className="muted" style={{ fontSize: 13 }}>SEO + WordPress transformation</div></div></article>
+              ["https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80", "SEO strategy & execution"],
+              ["https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80", "WordPress redesign"],
+              ["https://images.unsplash.com/photo-1551281044-8b1f1f5f2f7e?auto=format&fit=crop&w=900&q=80", "Analytics and growth ops"],
+              ["https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80", "Local SEO scale-up"],
+            ].map(([src, title]) => (
+              <article key={String(src)} className="card-soft" style={{ padding: 8 }}>
+                <img className="img" src={String(src)} alt={String(title)} />
+                <div style={{ padding: "10px 6px 4px" }}>
+                  <strong style={{ fontSize: 14 }}>{title}</strong>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       <section id="process" className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap split" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
-          <article className="card-white" style={{ padding: 24 }}>
-            <h2 className="h2" style={{ marginTop: 0 }}>Process</h2>
-            {["Discovery & goals", "Audit & opportunity map", "Roadmap", "Execution", "Reporting & scale"].map((s, i) => (
-              <div key={s} className="card-soft" style={{ padding: "12px 14px", marginBottom: 10, display: "flex", gap: 10 }}><span className="muted" style={{ width: 24 }}>0{i+1}</span><span>{s}</span></div>
+        <div className="wrap split" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <article>
+            <h2 className="h2" style={{ marginTop: 0 }}>How I work</h2>
+            {["Discovery", "Audit", "Roadmap", "Execution", "Reporting"].map((s, i) => (
+              <div key={s} className="card-soft" style={{ padding: "12px 14px", marginBottom: 8, display: "flex", gap: 10 }}>
+                <span className="muted" style={{ width: 24 }}>0{i + 1}</span>
+                <span>{s}</span>
+              </div>
             ))}
           </article>
-          <article className="card-dark" style={{ padding: 24 }}>
-            <h3 style={{ marginTop: 0 }}>What you get</h3>
-            <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.9, color: "#d1d5db" }}>
-              <li>Clear priority plan</li><li>Weekly execution updates</li><li>SEO + dev alignment</li><li>Measurable KPI tracking</li>
-            </ul>
+          <article className="card-soft" style={{ padding: 16 }}>
+            <h3 style={{ marginTop: 0 }}>Quick contact</h3>
+            <div className="muted" style={{ fontSize: 14, marginBottom: 10 }}>Share your website and target market.</div>
+            <input placeholder="Your name" style={inputStyle} />
+            <input placeholder="Email" style={inputStyle} />
+            <textarea placeholder="Project details" style={{ ...inputStyle, minHeight: 120 }} />
+            <button className="btn btn-dark" style={{ width: "100%", marginTop: 4 }}>Send Inquiry</button>
           </article>
         </div>
       </section>
 
       <section id="reviews" className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap card-white" style={{ borderRadius: 64, padding: 24 }}>
-          <h2 className="h2" style={{ marginTop: 0 }}>Customer Reviews</h2>
+        <div className="wrap">
+          <h2 className="h2" style={{ marginTop: 0 }}>Client Reviews</h2>
           <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))" }}>
-            {["Sakib transformed our rankings and lead quality.","Strong technical execution and clear communication.","Exactly the SEO + WordPress partner we needed."].map((q)=> (
-              <blockquote key={q} className="card-soft" style={{ padding: 18, margin: 0 }}><p style={{ margin: 0 }}>&ldquo;{q}&rdquo;</p></blockquote>
+            {["Sakib transformed our SEO and lead quality.", "Great execution speed and communication.", "The site now performs and converts much better."].map((q) => (
+              <blockquote key={q} className="card-soft" style={{ margin: 0, padding: 16 }}>
+                <p style={{ margin: 0 }}>&ldquo;{q}&rdquo;</p>
+              </blockquote>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="cta" className="section" style={{ paddingTop: 0 }}>
+      <section id="contact" className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <div className="card-dark" style={{ padding: 34, textAlign: "center" }}>
-            <p style={{ opacity: .75, letterSpacing: ".16em", textTransform: "uppercase", fontSize: 12 }}>Call to Action</p>
-            <h2 className="h2" style={{ color: "#fff", margin: "8px 0" }}>Ready to grow with SEO that performs?</h2>
-            <p style={{ opacity: .82, maxWidth: 700, margin: "0 auto" }}>Send your website and goals. I’ll share a practical roadmap with clear next steps.</p>
-            <div style={{ marginTop: 22 }}><a className="btn" style={{ background: "#fff", color: "#111827" }} href="mailto:hello@sakibahmed.com">Start Project</a></div>
+          <div className="card-dark" style={{ padding: 30, textAlign: "center" }}>
+            <p style={{ opacity: .75, letterSpacing: ".15em", textTransform: "uppercase", fontSize: 12 }}>Call to Action</p>
+            <h2 className="h2" style={{ color: "#fff", margin: "8px 0" }}>Ready to scale your search growth?</h2>
+            <p style={{ opacity: .85, maxWidth: 640, margin: "0 auto" }}>Let’s build a clear roadmap and execute fast.</p>
+            <div style={{ marginTop: 18 }}><a className="btn" style={{ background: "#fff", color: "#111827" }} href="mailto:hello@sakibahmed.com">Start Project</a></div>
           </div>
         </div>
       </section>
@@ -131,3 +131,13 @@ export default function Home() {
     </main>
   );
 }
+
+const inputStyle: React.CSSProperties = {
+  width: "100%",
+  padding: "12px 12px",
+  borderRadius: 12,
+  border: "1px solid #d4d8dd",
+  background: "#fff",
+  marginBottom: 8,
+  font: "inherit",
+};
