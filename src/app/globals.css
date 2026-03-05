@@ -11,3 +11,6 @@
 .kpi{padding:16px;border-radius:14px;border:1px solid #e5e7eb;background:#fff}
 .img{width:100%;height:100%;object-fit:cover;display:block;border-radius:16px}
 .footer{border-top:1px solid #e5e7eb;padding:26px 0;color:#64748b;font-size:14px}
+@media (max-width: 900px){
+  .hero-split,.two-col{grid-template-columns:1fr !important}
+}
